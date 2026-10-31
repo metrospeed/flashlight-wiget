@@ -19,23 +19,16 @@ class FlashlightWidget : AppWidgetProvider() {
             if (ids.isNotEmpty()) manager.updateAppWidget(ids, views(context))
         }
 
-        private fun views(context: Context): RemoteViews {
-            val on = FlashlightService.isOn
-            return RemoteViews(context.packageName, R.layout.widget_flashlight).apply {
+        private fun views(context: Context): RemoteViews =
+            RemoteViews(context.packageName, R.layout.widget_flashlight).apply {
                 setImageViewResource(
                     R.id.widget_icon,
-                    if (on) R.drawable.ic_flashlight_on else R.drawable.ic_flashlight_off,
-                )
-                setInt(
-                    R.id.widget_root,
-                    "setBackgroundResource",
-                    if (on) R.drawable.widget_bg_on else R.drawable.widget_bg_off,
+                    if (FlashlightService.isOn) R.drawable.widget_on else R.drawable.widget_off,
                 )
                 setOnClickPendingIntent(
                     R.id.widget_root,
                     FlashlightService.pendingIntent(context, FlashlightService.ACTION_TOGGLE),
                 )
             }
-        }
     }
 }
