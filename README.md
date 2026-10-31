@@ -30,3 +30,7 @@ Tap the widget to toggle the light. While it's on, a "Flashlight is on" notifica
   It runs as a foreground service while the light is on, because Android turns the torch off
   if the process that enabled it is killed. It also tracks changes from the quick settings tile.
 - `MainActivity` — a big toggle button plus instructions.
+
+## License
+
+[MIT](LICENSE)
