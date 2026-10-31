@@ -54,8 +54,6 @@ class MainActivity : Activity() {
     }
 
     private fun render() {
-        val on = FlashlightService.isOn
-        toggle.setImageResource(if (on) R.drawable.ic_flashlight_on else R.drawable.ic_flashlight_off)
-        toggle.setBackgroundResource(if (on) R.drawable.widget_bg_on else R.drawable.widget_bg_off)
+        toggle.setImageResource(if (FlashlightService.isOn) R.drawable.widget_on else R.drawable.widget_off)
     }
 }
