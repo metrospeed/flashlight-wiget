@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Flashlight Widget</string>
+    <string name="widget_name">Flashlight</string>
+    <string name="widget_description">Tap to toggle the flashlight</string>
+    <string name="toggle_flashlight">Toggle flashlight</string>
+    <string name="add_widget">Add widget to home screen</string>
+    <string name="instructions">Long-press your home screen, choose Widgets, and drag the Flashlight widget onto it. Tap the widget to turn the flashlight on or off.</string>
+    <string name="channel_name">Flashlight</string>
+    <string name="notification_title">Flashlight is on</string>
+    <string name="notification_text">Tap to turn off</string>
+    <string name="no_flash">This device has no flashlight</string>
+    <string name="flash_unavailable">Flashlight is unavailable (camera in use?)</string>
+</resources>

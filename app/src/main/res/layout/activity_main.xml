@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <ImageButton
+        android:id="@+id/toggle"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:background="@drawable/widget_bg_off"
+        android:contentDescription="@string/toggle_flashlight"
+        android:padding="36dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_flashlight_off" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:gravity="center"
+        android:text="@string/instructions"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/add_widget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/add_widget" />
+</LinearLayout>

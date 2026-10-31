@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="torch_on">#FFD54F</color>
+    <color name="torch_off">#303030</color>
+    <color name="icon_on">#212121</color>
+    <color name="icon_off">#FFFFFF</color>
+    <color name="launcher_background">#212121</color>
+</resources>
